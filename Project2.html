@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Navigation Bar</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">SignUp</a>
+                    <a href="#">LogIn</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <h1 class="text-center"
+        style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">TODOs
+        LIST</h1>
+    <div class="myform">
+        <label for="title">Title<br /></label>
+        <input type="text" id="text" value="Enter Title"><br />
+        <small>Add an item to list.</small><br />
+        <label style="margin-top: 10px" name="description" for="title">Description<br /></label>
+        <textarea id="descriptionBox" cols="30" rows="2"></textarea><br />
+    </div>
+    <button type="submit" class="btn btn-primary" id="add">Add to List</button>
+    <button type="submit" class="btn btn-primary" id="clear" onclick="clearStorage()">Clear List</button>
+    <div class="items">
+        <h1>Your Items</h1>
+        <table class="itemsTable">
+            <thead>
+                <tr>
+                    <th scope="col">Serail Number</th>
+                    <th scope="col">Item Title</th>
+                    <th scope="col">Item Description</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <th scope="row">1</th>
+                <td>Get Some Coffee</td>
+                <td>Get Some Coffee as you are a Programmer</td>
+                <td><button class="btn btn-primary" id="add">Delete</button></td>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

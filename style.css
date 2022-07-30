@@ -1,0 +1,149 @@
+@media only screen and(min-width: 768px) {}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding-top: 15px;
+    background: black;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    /* remove bullets  */
+    align-items: center;
+    /* margin: 0; and padding: 0; to remove browser :default setting */
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    color: white;
+    float: right;
+}
+
+nav ul li {
+    text-decoration: none;
+    padding-right: 14px;
+    word-spacing: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: blueviolet;
+}
+
+.myform {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* align-items: center;
+    justify-content: center; */
+    /* display: flex; */
+    /* position: relative;
+    margin: 0 auto; */
+    margin-top: 10px;
+    margin-left: 28%;
+
+}
+
+.myform #text {
+    margin-top: 10px;
+    width: 69%;
+    padding: 5px;
+}
+
+.myform #descriptionBox {
+    margin-top: 10px;
+    width: 70%;
+}
+
+#add {
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    border-radius: 40px;
+    color: white;
+    background: black;
+    margin-left: 28%;
+}
+
+#add:hover {
+    color: black;
+    background: white;
+}
+
+#clear {
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    border-radius: 40px;
+    color: white;
+    background: black;
+}
+
+#clear:hover {
+    color: black;
+    background: white;
+}
+
+.items {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    text-decoration: center;
+}
+
+.items .itemsTable {
+    border: 1px solid rgb(65, 57, 57);
+    border-collapse: collapse;
+    table-layout: fixed;
+    align-items: center;
+    padding: 30px 30px 20px;
+    line-height: 44px;
+    width: 100%;
+    align-items: center;
+}
+
+.items .itemsTable thead {
+    background: rgb(8, 8, 8);
+    color: white;
+    border-collapse: collapse;
+    table-layout: fixed;
+    align-items: center;
+    padding: 0px 30px 20px;
+
+}
+
+.items .itemsTable tbody {
+    border: 1px solid rgb(231, 226, 226);
+    background: rgb(243, 241, 241);
+    border-collapse: collapse;
+    table-layout: fixed;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+}
+
+.items .itemsTable tbody td .btn-primary {
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    border-radius: 40px;
+    color: white;
+    background: black;
+}
+
+.items .itemsTable tbody td .btn-primary:hover {
+    color: black;
+    background: white;
+
+}
